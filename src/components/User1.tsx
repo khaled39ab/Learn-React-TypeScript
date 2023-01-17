@@ -7,7 +7,7 @@ type userProps = {
     age: number,
     isRegistered: boolean
 }
-const User = ({ user, age, isRegistered }: userProps) => {
+const User1 = ({ user, age, isRegistered }: userProps) => {
     return (
         <div style={{ border: '2px solid pink', margin: '2rem' }}>
             <h3>{user}</h3>
@@ -17,4 +17,4 @@ const User = ({ user, age, isRegistered }: userProps) => {
     );
 };
 
-export default User;
+export default User1;
