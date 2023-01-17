@@ -1,18 +1,19 @@
 import React from 'react';
 
 type fetchProps = {
-    status: string
+    // status: string
+    status: 'success' | 'loading' | 'error'; // union type
 }
 const DataFetch = ({ status }: fetchProps) => {
     if (status === "loading") {
-        return <p>Data is loading...</p>
+        return <h2 style={{color: 'gray'}}>Data is loading...</h2>
     }
     else if (status === "error") {
-        return <p>Error: Data could not fetched.</p>
+        return <h2 style={{color: 'red'}}>Error: Data could not fetched.</h2>
     }
     return (
         <div>
-            <p>Data fetched successfully.</p>
+            <h2 style={{color: 'green'}}>Data fetched successfully.</h2>
         </div>
     );
 };

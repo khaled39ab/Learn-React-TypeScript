@@ -36,7 +36,7 @@ function App() {
   return (
     <div className="App">
       <h1>Learn React TypeScript</h1>
-      <h2>User Registration</h2>
+      {/* <h2>User Registration</h2> */}
       {/* <User1 user={"Rime"} age={25} isRegistered={true} />
       <User1 user={"Saadi"} age={26} isRegistered={false} /> */}
       {/* <User2 name={"Saadi"} age={26} isStudent={false} lang ={['Bangla', 'English']}/> */}
