@@ -4,7 +4,6 @@ import Card2 from './Card2';
 const Price = () => {
     return (
         <div>
-
             <h2>Package</h2>
             <div className='card-container'>
                 <Card2>
