@@ -9,3 +9,31 @@
   margin: 2rem;
   box-shadow: 0.2rem 0.2rem 0.2rem gray;
 }
+
+.card-container{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 3rem;
+}
+
+.card2 {
+  background-color: rgb(245, 245, 154);
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  margin: 1rem;
+  width: 15rem;
+  box-shadow: 0.3rem 0.3rem 0.3rem gray;
+}
+
+.card2 button{
+  padding-top: 0.4rem;
+  padding-bottom: 0.4rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  background-color: rgb(139, 241, 36);
+  color: red;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  font-weight: 900;
+}

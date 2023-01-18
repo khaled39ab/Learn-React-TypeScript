@@ -4,7 +4,8 @@ import './App.css';
 // import User2 from './components/User2';
 // import User3 from './components/User3';
 // import DataFetch from './components/DataFetch';
-import Post from './components/children props/Post';
+// import Post from './components/children props/Post';
+import Price from './components/children props/Price';
 
 /* 
 const user2 = {
@@ -54,7 +55,8 @@ function App() {
        <DataFetch status= {'loading'}/> */}
 
       {/* ===================  children props Component  =================== */}
-      <Post />
+      {/* <Post /> */}
+      <Price />
     </div>
   );
 }
