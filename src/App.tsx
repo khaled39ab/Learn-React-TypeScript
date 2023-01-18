@@ -3,7 +3,8 @@ import './App.css';
 // import User1 from './components/User1';
 // import User2 from './components/User2';
 // import User3 from './components/User3';
-import DataFetch from './components/DataFetch';
+// import DataFetch from './components/DataFetch';
+import Post from './components/children props/Post';
 
 /* 
 const user2 = {
@@ -38,15 +39,22 @@ function App() {
       <h1>Learn React TypeScript</h1>
       {/* <h2>User Registration</h2> */}
 
+      {/* ===================  User1 Component  =================== */}
       {/* <User1 user={"Rime"} age={25} isRegistered={true} />
       <User1 user={"Saadi"} age={26} isRegistered={false} /> */}
-      
+
+      {/* ===================  User2 Component  =================== */}
       {/* <User2 name={"Saadi"} age={26} isStudent={false} lang ={['Bangla', 'English']}/>  <User2 user = {user2}/> */}
 
+      {/* ===================  User3 Component  =================== */}
       {/* <User3 users = {users}/> */}
 
-      {/* <DataFetch status= {'error'}/> */}
-      <DataFetch status= {'loading'}/>
+      {/* ===================  DataFetch Component  =================== */}
+      {/* <DataFetch status= {'error'}/> 
+       <DataFetch status= {'loading'}/> */}
+
+      {/* ===================  children props Component  =================== */}
+      <Post />
     </div>
   );
 }
