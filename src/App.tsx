@@ -35,6 +35,13 @@ const users = [
 ]
 */
 
+const colorStyle = {
+  color: 'red',
+  backgroundColor: "gray",
+  padding: '0.5rem',
+  margin: '3rem'
+}
+
 function App() {
   return (
     <div className="App">
@@ -60,7 +67,8 @@ function App() {
        <Price /> */}
 
       {/* ===================  style props Component  =================== */}
-      <Color colorStyle={{ color: 'red' }} />
+      {/* <Color colorStyle={{color: 'red'}} /> */}
+      <Color colorStyle={colorStyle} />
 
     </div>
   );
