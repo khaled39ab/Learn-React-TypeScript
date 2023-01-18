@@ -5,7 +5,8 @@ import './App.css';
 // import User3 from './components/User3';
 // import DataFetch from './components/DataFetch';
 // import Post from './components/children props/Post';
-import Price from './components/children props/Price';
+// import Price from './components/children props/Price';
+import Color from './components/style props/Color';
 
 /* 
 const user2 = {
@@ -55,8 +56,12 @@ function App() {
        <DataFetch status= {'loading'}/> */}
 
       {/* ===================  children props Component  =================== */}
-      {/* <Post /> */}
-      <Price />
+      {/* <Post /> 
+       <Price /> */}
+
+      {/* ===================  style props Component  =================== */}
+      <Color colorStyle={{ color: 'red' }} />
+
     </div>
   );
 }
