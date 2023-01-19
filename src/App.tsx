@@ -6,7 +6,8 @@ import './App.css';
 // import DataFetch from './components/DataFetch';
 // import Post from './components/children props/Post';
 // import Price from './components/children props/Price';
-import Color from './components/style props/Color';
+// import Color from './components/style props/Color';
+import HookType from './components/useState hook/HookType';
 
 /* 
 const user2 = {
@@ -67,8 +68,11 @@ function App() {
        <Price /> */}
 
       {/* ===================  style props Component  =================== */}
-      {/* <Color colorStyle={{color: 'red'}} /> */}
-      <Color colorStyle={colorStyle} />
+      {/* <Color colorStyle={{color: 'red'}} />
+       <Color colorStyle={colorStyle} /> */}
+
+      {/* ===================  hook type Component  =================== */}
+      <HookType />
 
     </div>
   );
