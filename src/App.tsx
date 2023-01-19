@@ -36,12 +36,14 @@ const users = [
 ]
 */
 
+/* 
 const colorStyle = {
   color: 'red',
   backgroundColor: "gray",
   padding: '0.5rem',
   margin: '3rem'
 }
+*/
 
 function App() {
   return (
