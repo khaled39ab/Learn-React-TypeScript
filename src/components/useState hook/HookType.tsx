@@ -9,7 +9,8 @@ const HookType = () => {
     const [count, setCount] = useState(0);
     // const [count, setCount] = useState<number>(0);  // no need to set type
 
-    const [users, setUsers] = useState<null | User>(null);
+    // const [user, setUser] = useState<null | User>(null);
+    const [user, setUser] = useState<User>({} as User); // if must have user even initial value can empty object
 
     const handleIncrease = () => {
         // setCount( "1")  // Error: Argument of type 'string' is not assignable to parameter of type 'SetStateAction<number>'
@@ -22,7 +23,7 @@ const HookType = () => {
     }
 
     const handleAddUser = () => {
-        setUsers({ id: 1, name: "Aminul" })
+        setUser({ id: 1, name: "Aminul" })
     }
 
     return (
@@ -35,7 +36,8 @@ const HookType = () => {
             </div>
 
             <div style={{ border: '2px solid pink', margin: '2rem', paddingBottom: '1.5rem' }}>
-                <h3>{users?.name}</h3>
+                <h3>{user?.name}</h3>
+                {/* <h3>{user.name}</h3> no need if use {} as User*/} 
                 <button onClick={handleAddUser}>Add user</button>
             </div>
         </div>
