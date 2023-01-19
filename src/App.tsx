@@ -7,7 +7,8 @@ import './App.css';
 // import Post from './components/children props/Post';
 // import Price from './components/children props/Price';
 // import Color from './components/style props/Color';
-import HookType from './components/useState hook/HookType';
+// import HookType from './components/useState hook/HookType';
+import NewUser from './components/events type/NewUser';
 
 /* 
 const user2 = {
@@ -74,7 +75,10 @@ function App() {
        <Color colorStyle={colorStyle} /> */}
 
       {/* ===================  hook type Component  =================== */}
-      <HookType />
+      {/* <HookType /> */}
+
+      {/* ===================  event type Component  =================== */}
+      <NewUser />
 
     </div>
   );
