@@ -8,7 +8,8 @@ import './App.css';
 // import Price from './components/children props/Price';
 // import Color from './components/style props/Color';
 // import HookType from './components/useState hook/HookType';
-import NewUser from './components/events type/NewUser';
+// import NewUser from './components/events type/NewUser';
+import FormType from './components/events type/FormType';
 
 /* 
 const user2 = {
@@ -78,7 +79,8 @@ function App() {
       {/* <HookType /> */}
 
       {/* ===================  event type Component  =================== */}
-      <NewUser />
+      {/* <NewUser /> */}
+      <FormType />
 
     </div>
   );
