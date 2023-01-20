@@ -62,7 +62,9 @@ const Counter = () => {
                 <button onClick={() => {
                     dispatch({ type: DECREMENT })
                 }}>Decrement</button>
+                
                 <br />
+
                 <button onClick={() => {
                     dispatch({ type: INCREMENTBYAMOUNT, payload: 5 })
                 }}>Increment By Amount 5</button>
