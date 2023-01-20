@@ -16,6 +16,8 @@ const FormType = () => {
     const handleSubmit = (e : React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
         console.log({name, email});
+        setEmail('');
+        setName('');
     }
 
     return (
