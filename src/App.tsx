@@ -9,7 +9,8 @@ import './App.css';
 // import Color from './components/style props/Color';
 // import HookType from './components/useState hook/HookType';
 // import NewUser from './components/events type/NewUser';
-import FormType from './components/events type/FormType';
+// import FormType from './components/events type/FormType';
+import Counter from './components/type useReducer hook/Counter';
 
 /* 
 const user2 = {
@@ -79,8 +80,11 @@ function App() {
       {/* <HookType /> */}
 
       {/* ===================  event type Component  =================== */}
-      {/* <NewUser /> */}
-      <FormType />
+      {/* <NewUser /> 
+       <FormType /> */}
+
+      {/* ===================  type useReducer hook Component  =================== */}
+      <Counter />
 
     </div>
   );
