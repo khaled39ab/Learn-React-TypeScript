@@ -11,9 +11,12 @@ type counterState = {
     count: number
 }
 
-type incrementType = { type: "INCREMENT" };
-type resetType = { type: "RESET" };
-type decrementType = { type: "DECREMENT" };
+// type incrementType = { type: "INCREMENT" };
+type incrementType = { type: typeof INCREMENT };
+// type resetType = { type: "RESET" };
+type resetType = { type: typeof RESET };
+// type decrementType = { type: "DECREMENT" };
+type decrementType = { type: typeof DECREMENT };
 
 type counterActionType = incrementType | resetType | decrementType;
 
@@ -41,12 +44,21 @@ const Counter = () => {
             <h2>Type useReducer Hook</h2>
 
             <div>
-                <h3>Count: {0}</h3>
-                <button>Increment</button>
-                <button>Reset</button>
-                <button>Decrement</button>
+                <h3>Count: {state.count}</h3>
+                <button onClick={() => {
+                    dispatch({ type: INCREMENT })
+                }}>Increment</button>
+
+                <button onClick={() => {
+                    dispatch({ type: RESET });
+                }}>Reset</button>
+
+                <button onClick={() => {
+                    dispatch({ type: DECREMENT })
+                }}>Decrement</button>
+
             </div>
-        </div>
+        </div >
     );
 };
 
